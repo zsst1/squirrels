@@ -14,6 +14,7 @@ class Sighting(models.Model):
     chasing = models.BooleanField('Chasing', )
     climbing = models.BooleanField('Climbing', )
     eating = models.BooleanField('Eating', )
+    forageing = models.BooleanField('Foraging', )
     other_activities = models.CharField('Other Activities', max_length = 200)
     kuks = models.BooleanField('Kuks', )
     quaas = models.BooleanField('Quaas', )

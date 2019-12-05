@@ -1,6 +1,6 @@
 import csv
 from django.core.management.base import BaseCommand
-from adopt.models import Sighting
+from squirrel.models import Sighting
 
 class Command(BaseCommand):
     def add_arguments(self, parser):
@@ -16,7 +16,7 @@ class Command(BaseCommand):
                     unique_squirrel_id = item('Unique Squirrel ID'),
                     shift = item('Shift'),
                     date = item('Date'),
-                    age = item('Age')
+                    age = item('Age'),
                     primary_fur_color = item('Primary Fur Color'),
                     location = item('Location'),
                     specific_location = item('Specific Location'),
